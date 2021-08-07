@@ -8,11 +8,21 @@ When mithril/stream is used in a React application, Mithril's types conflict wit
 
 ## Usage
 
+### Installation
+
 ```bash
 npm install mithril-stream-standalone
 ```
 
-Code: 
+### Import
+
+Replace regular import
+
+```js
+import Stream from 'mithril/stream';
+```
+
+with: 
 
 ```js
 import Stream from "mithril-stream-standalone";
