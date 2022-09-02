@@ -1,6 +1,6 @@
 {
   "name": "mithril-stream-standalone",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "files": [
     "dist",
@@ -11,7 +11,8 @@
   "module": "./dist/mithril-stream-standalone.es.js",
   "exports": {
     ".": {
-      "import": "./dist/mithril-stream-standalone.es.js"
+      "import": "./dist/mithril-stream-standalone.es.js",
+      "default": "./dist/mithril-stream-standalone.umd.js"
     }
   },
   "types": "index.d.ts",
