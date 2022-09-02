@@ -1,4 +1,4 @@
-// tslint:disable:rulename strict-export-declare-modifiers
+// tslint:disable:strict-export-declare-modifiers
 /** Creates an empty stream. */
 declare function Stream<T>(): Stream<T>; // tslint:disable-line no-unnecessary-generics
 /** Creates a stream with an initial value. */
@@ -35,9 +35,9 @@ declare namespace Stream {
     ...streams: { [I in keyof S]: Stream<S[I]> }
   ): Stream<T>;
   /** Creates a stream whose value is the array of values from an array of streams. */
-  export function merge<S extends any[]>(
-    streams: { [I in keyof S]: Stream<S[I]> }
-  ): Stream<{ [I in keyof S]: S[I] }>;
+  export function merge<S extends any[]>(streams: {
+    [I in keyof S]: Stream<S[I]>;
+  }): Stream<{ [I in keyof S]: S[I] }>;
   /** Creates a new stream with the results of calling the function on every incoming stream with and accumulator and the incoming value. */
   export function scan<T, U>(
     fn: (acc: U, value: T) => U,
