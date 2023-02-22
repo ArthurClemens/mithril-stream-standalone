@@ -1,7 +1,7 @@
 "use strict";
 
-var o = require("ospec");
-var Stream = require("../dist/mithril-stream-standalone.umd");
+import o from "ospec";
+import Stream from "mithril-stream-standalone";
 
 o.spec("stream", function () {
   o.spec("stream", function () {
