@@ -1,7 +1,7 @@
 "use strict";
 
-var o = require("ospec");
-var stream = require("../dist/mithril-stream-standalone.umd");
+import o from "ospec";
+import stream from "mithril-stream-standalone";
 
 o.spec("scanMerge", function () {
   o("defaults to seed", function () {
