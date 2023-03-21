@@ -30,6 +30,11 @@ to:
 import Stream from "mithril-stream-standalone";
 ```
 
+### Using stream
+
+See [Mithril Stream documentation](https://mithril.js.org/stream.html)
+
+
 ## Source
 
 This repo contains copies of Mithril code.
