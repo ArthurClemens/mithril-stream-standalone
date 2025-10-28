@@ -16,7 +16,7 @@ jobs:
       - name: Use Node.js v18
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 24
 
       # just so we learn about available environment variables GitHub provides
       - name: Print env variables
